@@ -11,27 +11,34 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :sum %>
-    <%= form.text_field :sum %>
-  </div>
-
-  <div class="field">
-    <%= form.label :year_rel %>
-    <%= form.text_field :year_rel %>
-  </div>
-
-  <div class="field">
-    <%= form.label :img_url %>
-    <%= form.text_field :img_url %>
-  </div>
+  <table>
+    <tr>
+      <div class="field">
+        <td><%= form.label :name %></td>
+        <td class="input"><%= form.text_field :name, class: "textbox" %></td>
+      </div>
+    </tr>
+    <tr>
+      <div class="field">
+        <td><%= form.label :summary %></td>
+        <td class="input"><%= form.text_area :sum %></td>
+      </div>
+    </tr>
+    <tr>
+      <div class="field">
+        <td><%= form.label :year_released %></td>
+        <td class="input"><%= form.text_field :year_rel, class: "textbox" %></td>
+      </div>
+    </tr>
+    <tr>
+      <div class="field">
+        <td><%= form.label :img_url %></td>
+        <td class="input"><%= form.text_field :img_url, class: "textbox" %></td>
+      </div>
+    </tr>
+  </table>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn" %>
   </div>
 <% end %>

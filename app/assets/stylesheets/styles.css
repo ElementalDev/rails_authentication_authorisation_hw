@@ -1,0 +1,81 @@
+/* Styles for nav bar */
+.navbar {
+  background-color: #5DC21E;
+}
+
+.navbar-nav > li > a {
+  color: white;
+}
+
+.nav {
+  float: right;
+}
+
+.navbar > .container-fluid .navbar-brand {
+  color: white;
+}
+
+.navbar > .container-fluid .navbar-brand:hover {
+  background-color: #5DC21E;
+  color: #C2C2C2;
+}
+
+.btn {
+  border: 2px solid #F1F1F1;
+}
+
+nav .btn {
+  border: none;
+}
+
+.btn:hover {
+  background-color: #F1F1F1;
+}
+
+
+/* Styles for index and show */
+
+.cont {
+  margin-top: 20px;
+}
+
+.img_cont {
+  width: 200px;
+  margin: auto;
+}
+
+.img_cont img {
+  width: 100%;
+}
+
+.link_cont {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+/* Styles for form */
+
+.input {
+  padding: 20px;
+}
+
+.textbox {
+  padding-left: 5px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+}
+
+textarea {
+  padding-left: 5px;
+  min-height: 80px;
+  min-width: 300px;
+  font-size: 20px;
+}
+
+label {
+  font-size: 20px;
+}
