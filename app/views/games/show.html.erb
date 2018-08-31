@@ -1,16 +1,14 @@
-<div class="container">
-  <h1 class="title"><%= @game.name %></h1>
-  <div class="img_cont">
-    <%= image_tag @game.img_url %>
-  </div>
-  <div class="info_cont">
-    <h2><%= @game.year_rel %></h2>
-    <p><%= @game.sum %></p>
-  </div>
-  <% if (user_signed_in?) %>
-    <% if (current_user.isadmin?) %>
-      <%= link_to 'Edit', edit_game_path(@game), class: "btn"%> |
-    <% end %>
-  <% end %>
-  <%= link_to 'Back', games_path, class: "btn"%>
+<h1 class="title"><%= @game.name %></h1>
+<div class="img_cont">
+  <%= image_tag @game.img_url %>
 </div>
+<div class="info_cont">
+  <h2><%= @game.year_rel %></h2>
+  <p><%= @game.sum %></p>
+</div>
+<% if (user_signed_in?) %>
+  <% if (current_user.isadmin?) %>
+    <%= link_to 'Edit', edit_game_path(@game), class: "btn"%> |
+  <% end %>
+<% end %>
+<%= link_to 'Back', games_path, class: "btn"%>

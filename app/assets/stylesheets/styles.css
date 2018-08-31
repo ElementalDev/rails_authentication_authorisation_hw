@@ -1,5 +1,6 @@
 /* Styles for nav bar */
 .navbar {
+  border-radius: 0px;
   background-color: #5DC21E;
 }
 
@@ -41,6 +42,7 @@ nav .btn {
 
 .img_cont {
   width: 200px;
+  height: 300px;
   margin: auto;
 }
 
@@ -78,4 +80,14 @@ textarea {
 
 label {
   font-size: 20px;
+}
+
+/* Master Styles */
+
+a {
+    color: #929292;
+}
+
+a:visited {
+    color: #929292;
 }
