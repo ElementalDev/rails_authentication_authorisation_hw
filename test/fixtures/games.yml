@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  sum: MyString
+  year_rel: MyString
+  img_url: MyString
+
+two:
+  name: MyString
+  sum: MyString
+  year_rel: MyString
+  img_url: MyString

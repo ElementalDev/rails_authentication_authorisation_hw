@@ -1,0 +1,20 @@
+<h1>Games</h1>
+<div class="row">
+  <% @games.each do |game| %>
+    <div class="cont col-sm-4">
+      <div class="img_cont">
+        <%= image_tag game.img_url %>
+      </div>
+      <div class="link_cont">
+        <h2><%= game.name %></h2>
+        <%= link_to 'Show', game, class: "btn" %>
+        <% if (user_signed_in?) %>
+          <% if (current_user.isadmin?) %>
+            <%= link_to 'Edit', edit_game_path(game), class: "btn" %>
+            <%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure you want to delete this?' }, class: "btn" %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
